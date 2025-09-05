@@ -6,6 +6,17 @@ const Hero = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, -150]);
 
+  const handleJoinPilotProgram = () => {
+    // Scroll to CallToAction section
+    const callToActionSection = document.querySelector('#call-to-action');
+    if (callToActionSection) {
+      callToActionSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       const centerX = window.innerWidth / 2;
@@ -29,7 +40,7 @@ const Hero = () => {
         <motion.div
           style={{
             y,
-            backgroundImage: `url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1720974299501-02e16f2ff01e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
             transform: `translate(${mousePosition.x * 0.5}px, ${mousePosition.y * 0.5}px) scale(1.1)`,
             backgroundPosition: `${50 + mousePosition.x * 0.3}% ${50 + mousePosition.y * 0.3}%`,
           }}
@@ -113,7 +124,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 1 }}
         >
           <motion.button 
-            className="relative bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg overflow-hidden group shadow-2xl"
+            onClick={handleJoinPilotProgram}
+            className="relative bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg overflow-hidden group shadow-2xl cursor-pointer"
             style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             whileHover={{ 
               scale: 1.05, 

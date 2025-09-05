@@ -2,7 +2,7 @@
 
 A premium, modern landing page for the Rope.Core yacht monitoring system, featuring Apple Store-inspired design with advanced mouse parallax effects.
 
-![Rope.Core Landing Page](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Rope.Core Landing Page](https://images.unsplash.com/photo-1720974299501-02e16f2ff01e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## ✨ Features
 
@@ -12,14 +12,23 @@ A premium, modern landing page for the Rope.Core yacht monitoring system, featur
 - **⚡ Smooth Animations**: Framer Motion powered animations
 - **🎨 Modern Typography**: Space Grotesk font for premium look
 - **🌊 Yacht Theme**: Cinematic yacht photography and maritime elements
+- **📧 Email Integration**: Working contact form with email notifications
+- **🔧 Serverless Backend**: Express.js API deployed on Vercel
 
 ## 🛠️ Tech Stack
 
+### Frontend
 - **React 18** - Modern React with hooks
 - **TailwindCSS** - Utility-first CSS framework
 - **Framer Motion** - Production-ready motion library
 - **Heroicons** - Beautiful hand-crafted SVG icons
 - **Google Fonts** - Space Grotesk typography
+
+### Backend
+- **Express.js** - Web framework for Node.js
+- **Nodemailer** - Email sending library
+- **Vercel** - Serverless deployment platform
+- **CORS** - Cross-origin resource sharing
 
 ## 🚀 Getting Started
 
@@ -54,6 +63,8 @@ npm start
 - `npm run build` - Builds the app for production
 - `npm test` - Launches the test runner
 - `npm run eject` - Ejects from Create React App (one-way operation)
+- `npm run server` - Runs the Express server
+- `npm run dev` - Runs both client and server concurrently
 
 ## 🎨 Design Features
 
@@ -74,12 +85,21 @@ npm start
 - **Solution**: Rope.Core features and benefits
 - **How It Works**: Step-by-step process
 - **Pricing**: Clean, minimal pricing cards
-- **Call to Action**: Premium signup form
+- **Call to Action**: Premium signup form with email integration
 - **Footer**: Modern footer with social links
+
+### Email Functionality
+- **Working Contact Form**: Sends real emails to your inbox
+- **Form Validation**: Client and server-side validation
+- **Loading States**: Beautiful loading animations
+- **Success/Error Notifications**: User-friendly feedback
+- **HTML Email Templates**: Professional email formatting
 
 ## 🌐 Live Demo
 
-Visit the live demo: [https://festchenko.github.io/rope-core-landing](https://festchenko.github.io/rope-core-landing)
+Visit the live demo: [https://rope-core-landing-pok3o2scv-festchenkos-projects.vercel.app](https://rope-core-landing-pok3o2scv-festchenkos-projects.vercel.app)
+
+🚀 **Deployed on Vercel** with full email functionality!
 
 ## 📱 Responsive Design
 

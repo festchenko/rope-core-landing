@@ -141,7 +141,7 @@ const CallToAction = () => {
                     </svg>
                   </div>
                   <p className="text-green-400 font-medium">
-                    Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.
+                    Application submitted successfully! We'll be in touch soon.
                   </p>
                 </div>
               </motion.div>
@@ -160,7 +160,7 @@ const CallToAction = () => {
                     </svg>
                   </div>
                   <p className="text-red-400 font-medium">
-                    Произошла ошибка при отправке заявки. Попробуйте позже.
+                    An error occurred while submitting the application. Please try again later.
                   </p>
                 </div>
               </motion.div>
@@ -258,7 +258,7 @@ const CallToAction = () => {
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    Отправляем...
+                    Sending...
                   </>
                 ) : (
                   'Request Access'

@@ -23,7 +23,7 @@ const Hero = () => {
       const centerY = window.innerHeight / 2;
       
       setMousePosition({
-        x: (e.clientX - centerX) / 30, // Более плавное движение
+        x: (e.clientX - centerX) / 30, // Smoother movement
         y: (e.clientY - centerY) / 30,
       });
     };

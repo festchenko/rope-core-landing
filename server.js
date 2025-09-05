@@ -29,7 +29,7 @@ app.post('/api/submit-form', async (req, res) => {
     if (!name || !email || !yachtType) {
       return res.status(400).json({ 
         success: false, 
-        message: 'Все поля обязательны для заполнения' 
+        message: 'All fields are required' 
       });
     }
 
@@ -37,29 +37,29 @@ app.post('/api/submit-form', async (req, res) => {
     const mailOptions = {
       from: process.env.EMAIL_USER || 'your-email@gmail.com',
       to: process.env.EMAIL_USER || 'your-email@gmail.com', // ваша почта
-      subject: 'Новая заявка на участие в пилотной программе rope.core',
+      subject: 'New Application for rope.core Pilot Program',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px;">
-            Новая заявка на участие в пилотной программе
+            New Application for Pilot Program
           </h2>
           
           <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #007bff; margin-top: 0;">Данные заявителя:</h3>
-            <p><strong>Имя:</strong> ${name}</p>
+            <h3 style="color: #007bff; margin-top: 0;">Applicant Information:</h3>
+            <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Тип яхты:</strong> ${yachtType}</p>
+            <p><strong>Yacht Type:</strong> ${yachtType}</p>
           </div>
           
           <div style="background-color: #e9ecef; padding: 15px; border-radius: 5px; margin: 20px 0;">
             <p style="margin: 0; color: #6c757d; font-size: 14px;">
-              <strong>Дата заявки:</strong> ${new Date().toLocaleString('ru-RU')}
+              <strong>Application Date:</strong> ${new Date().toLocaleString('en-US')}
             </p>
           </div>
           
           <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6;">
             <p style="color: #6c757d; font-size: 12px; margin: 0;">
-              Это автоматическое уведомление с сайта rope.core
+              This is an automatic notification from rope.core website
             </p>
           </div>
         </div>
@@ -71,24 +71,24 @@ app.post('/api/submit-form', async (req, res) => {
 
     res.json({ 
       success: true, 
-      message: 'Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.' 
+      message: 'Application submitted successfully! We will be in touch soon.' 
     });
 
   } catch (error) {
-    console.error('Ошибка при отправке формы:', error);
+    console.error('Error sending form:', error);
     res.status(500).json({ 
       success: false, 
-      message: 'Произошла ошибка при отправке заявки. Попробуйте позже.' 
+      message: 'An error occurred while submitting the application. Please try again later.' 
     });
   }
 });
 
-// Обслуживание React приложения
+// Serve React application
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(PORT, () => {
-  console.log(`Сервер запущен на порту ${PORT}`);
-  console.log(`Для настройки email отредактируйте переменные EMAIL_USER и EMAIL_PASS в файле server.js`);
+  console.log(`Server running on port ${PORT}`);
+  console.log(`To configure email, edit EMAIL_USER and EMAIL_PASS environment variables`);
 });

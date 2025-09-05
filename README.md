@@ -1,87 +1,118 @@
-# rope.core Landing Page
+# 🚢 Rope.Core Landing Page
 
-A modern, minimalistic landing page for rope.core - "The Digital Heart of Your Yacht". Built with React, Tailwind CSS, and Framer Motion for smooth animations.
+A premium, modern landing page for the Rope.Core yacht monitoring system, featuring Apple Store-inspired design with advanced mouse parallax effects.
 
-## Features
+![Rope.Core Landing Page](https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
 
-- **Modern Design**: Tesla/Apple-inspired clean, futuristic aesthetic
-- **Responsive**: Fully responsive design that works on all devices
-- **Smooth Animations**: Fade-in animations using Framer Motion
-- **Premium Feel**: Minimalistic design with lots of white space and elegant typography
-- **Interactive Elements**: Hover effects and smooth transitions
+## ✨ Features
 
-## Sections
+- **🍎 Apple Store Design**: Clean, minimalistic, and premium aesthetic
+- **🎯 Mouse Parallax**: Interactive background that responds to cursor movement
+- **📱 Responsive**: Fully responsive design for all devices
+- **⚡ Smooth Animations**: Framer Motion powered animations
+- **🎨 Modern Typography**: Space Grotesk font for premium look
+- **🌊 Yacht Theme**: Cinematic yacht photography and maritime elements
 
-1. **Hero Section**: Full-screen introduction with main CTA
-2. **Problem Section**: Highlights yacht owner pain points
-3. **Solution Section**: Features grid showcasing rope.core capabilities
-4. **How It Works**: Simple 3-step process explanation
-5. **Pricing**: Clean pricing cards with hardware, installation, and subscription
-6. **Call to Action**: Pilot program signup form
-7. **Footer**: Minimal footer with company links
+## 🛠️ Tech Stack
 
-## Tech Stack
+- **React 18** - Modern React with hooks
+- **TailwindCSS** - Utility-first CSS framework
+- **Framer Motion** - Production-ready motion library
+- **Heroicons** - Beautiful hand-crafted SVG icons
+- **Google Fonts** - Space Grotesk typography
 
-- React 18
-- Tailwind CSS 3
-- Framer Motion (animations)
-- Inter font family
+## 🚀 Getting Started
 
-## Getting Started
+### Prerequisites
 
-1. Install dependencies:
+- Node.js 16+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/festchenko/rope-core-landing.git
+cd rope-core-landing
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Start the development server:
+3. Start the development server:
 ```bash
 npm start
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Build for Production
+## 📦 Available Scripts
 
-```bash
-npm run build
-```
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-This builds the app for production to the `build` folder.
+## 🎨 Design Features
 
-## Design System
+### Hero Section
+- Full-screen cinematic yacht background
+- Multi-layer mouse parallax effects
+- Floating particles animation
+- Premium typography with Space Grotesk
 
-### Colors
-- Primary: Black (#000000)
-- Secondary: White (#ffffff)
-- Accent: Gray (#888888)
-- Optional Accent: Blue (#007aff)
+### Interactive Elements
+- Mouse-responsive background layers
+- Smooth hover animations
+- Apple Store-style button effects
+- Scroll-triggered animations
 
-### Typography
-- Font Family: Inter, SF Pro Display, system fonts
-- Weights: 300 (light), 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
+### Sections
+- **Problem**: Yacht monitoring challenges
+- **Solution**: Rope.Core features and benefits
+- **How It Works**: Step-by-step process
+- **Pricing**: Clean, minimal pricing cards
+- **Call to Action**: Premium signup form
+- **Footer**: Modern footer with social links
 
-### Spacing
-- Consistent padding and margins using Tailwind's spacing scale
-- Section padding: 24 (py-24)
-- Container max width: 7xl (max-w-7xl)
+## 🌐 Live Demo
 
-## Customization
+Visit the live demo: [https://festchenko.github.io/rope-core-landing](https://festchenko.github.io/rope-core-landing)
 
-The design is built with Tailwind CSS utility classes, making it easy to customize:
+## 📱 Responsive Design
 
-- Colors can be modified in `tailwind.config.js`
-- Typography settings are in the same config file
-- Component styles are in individual component files
-- Global styles are in `src/index.css`
+- **Mobile**: Optimized for mobile devices
+- **Tablet**: Perfect tablet experience
+- **Desktop**: Full desktop experience with mouse parallax
 
-## Browser Support
+## 🎯 Performance
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Optimized images and animations
+- Lazy loading for better performance
+- Minimal bundle size
+- Fast loading times
 
-## License
+## 🤝 Contributing
 
-This project is created for rope.core. All rights reserved.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Unsplash](https://unsplash.com) for beautiful yacht photography
+- [Heroicons](https://heroicons.com) for clean SVG icons
+- [Framer Motion](https://www.framer.com/motion/) for smooth animations
+- [TailwindCSS](https://tailwindcss.com) for utility-first styling
+
+---
+
+Made with ❤️ for the yachting community

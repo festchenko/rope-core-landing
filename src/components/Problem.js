@@ -56,10 +56,10 @@ const Problem = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-8 tracking-tight">
-            Yacht owners lose thousands due to dead batteries, leaks, and theft.
+            Because freedom feels better when it's secure.
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
-            Charter companies suffer from downtime and costly repairs. Existing solutions are complex or incomplete.
+            rope.core protects your yacht so you can enjoy the journey, not worry about it.
           </p>
         </motion.div>
 

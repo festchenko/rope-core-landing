@@ -114,7 +114,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <p className="text-sm md:text-base text-gray-400 mb-12 max-w-2xl mx-auto font-light tracking-[0.05em]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Monitoring, safety, and control in one app.
+            rope.core protects your yacht so you can enjoy the journey, not worry about it.
           </p>
         </motion.div>
         

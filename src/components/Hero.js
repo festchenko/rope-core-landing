@@ -93,7 +93,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-light text-white mb-6 tracking-[0.2em] leading-none">
+          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-black text-white mb-6 tracking-[0.15em] leading-none" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             rope.core
           </h1>
         </motion.div>
@@ -103,7 +103,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <h2 className="text-lg md:text-xl lg:text-2xl font-extralight text-gray-300 mb-8 tracking-[0.3em] uppercase">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-light text-gray-300 mb-8 tracking-[0.2em] uppercase" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             Digital Heart of Your Yacht
           </h2>
         </motion.div>
@@ -113,7 +113,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <p className="text-sm md:text-base text-gray-400 mb-12 max-w-2xl mx-auto font-light tracking-[0.1em]">
+          <p className="text-sm md:text-base text-gray-400 mb-12 max-w-2xl mx-auto font-light tracking-[0.05em]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
             Monitoring, safety, and control in one app.
           </p>
         </motion.div>
@@ -125,7 +125,8 @@ const Hero = () => {
         >
           <motion.button 
             onClick={handleJoinPilotProgram}
-            className="relative bg-white text-black px-12 py-5 rounded-2xl font-light text-lg overflow-hidden group shadow-2xl cursor-pointer"
+            className="relative bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg overflow-hidden group shadow-2xl cursor-pointer"
+            style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             whileHover={{ 
               scale: 1.05, 
               boxShadow: "0 20px 40px rgba(255, 255, 255, 0.3)",

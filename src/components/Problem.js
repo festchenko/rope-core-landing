@@ -55,10 +55,10 @@ const Problem = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-8 tracking-[0.1em]">
             Because freedom feels better when it's secure.
           </h2>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed tracking-[0.05em]">
             rope.core protects your yacht so you can enjoy the journey, not worry about it.
           </p>
         </motion.div>
@@ -81,10 +81,10 @@ const Problem = () => {
                   <problem.icon className="w-full h-full" />
                 </motion.div>
                 
-                <h3 className="text-2xl font-medium text-white mb-4 group-hover:text-gray-100 transition-colors">
+                <h3 className="text-2xl font-light text-white mb-4 group-hover:text-gray-100 transition-colors tracking-wide">
                   {problem.title}
                 </h3>
-                <p className="text-gray-300 font-light leading-relaxed group-hover:text-gray-200 transition-colors">
+                <p className="text-gray-300 font-light leading-relaxed group-hover:text-gray-200 transition-colors tracking-[0.02em]">
                   {problem.description}
                 </p>
                 

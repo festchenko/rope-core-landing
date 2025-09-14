@@ -69,7 +69,7 @@ const Solution = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-[0.1em]">
             One app. Total control.
           </h2>
         </motion.div>
@@ -111,10 +111,10 @@ const Solution = () => {
                   />
                 </motion.div>
                 
-                <h3 className="text-2xl font-medium text-black mb-4 group-hover:text-gray-800 transition-colors">
+                <h3 className="text-2xl font-light text-black mb-4 group-hover:text-gray-800 transition-colors tracking-wide">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors">
+                <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors tracking-[0.02em]">
                   {feature.description}
                 </p>
                 
@@ -151,10 +151,10 @@ const Solution = () => {
             />
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-light mb-6">
+              <h3 className="text-3xl md:text-4xl font-light mb-6 tracking-[0.05em]">
                 Everything you need. Nothing you don't.
               </h3>
-              <p className="text-xl text-gray-300 font-light leading-relaxed">
+              <p className="text-xl text-gray-300 font-light leading-relaxed tracking-[0.03em]">
                 rope.core combines all essential yacht monitoring and control features into one elegant, easy-to-use platform.
               </p>
             </div>

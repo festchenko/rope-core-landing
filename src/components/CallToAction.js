@@ -107,10 +107,10 @@ const CallToAction = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 tracking-[0.1em]">
             Be among the first 50 yachts to join rope.core.
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light tracking-[0.05em]">
             Join our pilot program and help shape the future of yacht monitoring.
           </p>
         </motion.div>
@@ -174,7 +174,7 @@ const CallToAction = () => {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   viewport={{ once: true }}
                 >
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-light text-gray-300 mb-2 tracking-wide">
                     Full Name
                   </label>
                   <input
@@ -195,7 +195,7 @@ const CallToAction = () => {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-light text-gray-300 mb-2 tracking-wide">
                     Email Address
                   </label>
                   <input
@@ -217,7 +217,7 @@ const CallToAction = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <label htmlFor="yachtType" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="yachtType" className="block text-sm font-light text-gray-300 mb-2 tracking-wide">
                   Yacht Type
                 </label>
                 <select
@@ -246,7 +246,7 @@ const CallToAction = () => {
                 viewport={{ once: true }}
                 whileHover={!isSubmitting ? { scale: 1.02 } : {}}
                 whileTap={!isSubmitting ? { scale: 0.98 } : {}}
-                className={`w-full px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
+                className={`w-full px-8 py-4 rounded-lg font-light transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center ${
                   isSubmitting 
                     ? 'bg-gray-500 cursor-not-allowed' 
                     : 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600'
@@ -292,7 +292,7 @@ const CallToAction = () => {
                   repeat: Infinity,
                 }}
               />
-              <span className="text-sm font-light">Early access pricing</span>
+              <span className="text-sm font-light tracking-wide">Early access pricing</span>
             </motion.div>
             
             <motion.div
@@ -312,7 +312,7 @@ const CallToAction = () => {
                   delay: 0.5,
                 }}
               />
-              <span className="text-sm font-light">Priority support</span>
+              <span className="text-sm font-light tracking-wide">Priority support</span>
             </motion.div>
             
             <motion.div
@@ -332,7 +332,7 @@ const CallToAction = () => {
                   delay: 1,
                 }}
               />
-              <span className="text-sm font-light">Direct feedback channel</span>
+              <span className="text-sm font-light tracking-wide">Direct feedback channel</span>
             </motion.div>
           </div>
         </motion.div>

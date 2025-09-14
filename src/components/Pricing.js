@@ -102,10 +102,10 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-[0.1em]">
             Simple pricing
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light tracking-[0.05em]">
             Everything you need to transform your yacht into a smart vessel.
           </p>
         </motion.div>
@@ -143,7 +143,7 @@ const Pricing = () => {
                   
                   <div className="relative z-10">
                     <div className="text-center mb-8">
-                      <h3 className="text-2xl font-medium text-black mb-2 group-hover:text-gray-800 transition-colors">
+                      <h3 className="text-2xl font-light text-black mb-2 group-hover:text-gray-800 transition-colors tracking-wide">
                         {item.title}
                       </h3>
                       <div className="flex items-baseline justify-center mb-4">
@@ -154,7 +154,7 @@ const Pricing = () => {
                           <span className="text-lg text-gray-500 ml-1">{item.period}</span>
                         )}
                       </div>
-                      <p className="text-gray-600 font-light group-hover:text-gray-700 transition-colors">
+                      <p className="text-gray-600 font-light group-hover:text-gray-700 transition-colors tracking-[0.02em]">
                         {item.description}
                       </p>
                     </div>
@@ -174,7 +174,7 @@ const Pricing = () => {
                           >
                             <CheckIcon className="w-3 h-3" />
                           </motion.div>
-                          <span className="text-gray-600 font-light group-hover:text-gray-700 transition-colors">
+                          <span className="text-gray-600 font-light group-hover:text-gray-700 transition-colors tracking-[0.02em]">
                             {feature}
                           </span>
                         </motion.li>
@@ -182,7 +182,7 @@ const Pricing = () => {
                     </ul>
 
                     <motion.button
-                      className={`w-full py-3 rounded-lg font-medium transition-all duration-300 ${
+                      className={`w-full py-3 rounded-lg font-light transition-all duration-300 ${
                         item.popular 
                           ? 'bg-black text-white hover:bg-gray-800' 
                           : 'bg-gray-100 text-black hover:bg-gray-200'
@@ -225,10 +225,10 @@ const Pricing = () => {
             />
             
             <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-light mb-6">
+              <h3 className="text-3xl md:text-4xl font-light mb-6 tracking-[0.05em]">
                 Total first-year cost: $2,180
               </h3>
-              <p className="text-xl text-gray-300 font-light leading-relaxed">
+              <p className="text-xl text-gray-300 font-light leading-relaxed tracking-[0.03em]">
                 Hardware ($1,200) + Installation ($300) + 12 months subscription ($480)
               </p>
             </div>

@@ -84,7 +84,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="text-lg font-medium mb-6 text-white">Company</h4>
+            <h4 className="text-lg font-light mb-6 text-white tracking-wide">Company</h4>
             <ul className="space-y-4">
               {['About', 'Contact', 'Careers'].map((link, index) => (
                 <motion.li
@@ -96,7 +96,7 @@ const Footer = () => {
                 >
                   <a
                     href={`#${link.toLowerCase()}`}
-                    className="text-gray-400 hover:text-white transition-colors duration-300 font-light group flex items-center"
+                    className="text-gray-400 hover:text-white transition-colors duration-300 font-light group flex items-center tracking-wide"
                   >
                     <span className="w-1 h-1 bg-gray-400 rounded-full mr-3 group-hover:bg-white transition-colors duration-300"></span>
                     {link}
@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-medium mb-6 text-white">Legal</h4>
+            <h4 className="text-lg font-light mb-6 text-white tracking-wide">Legal</h4>
             <ul className="space-y-4">
               {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((link, index) => (
                 <motion.li
@@ -119,7 +119,7 @@ const Footer = () => {
                 >
                   <a
                     href={`#${link.toLowerCase().replace(' ', '-')}`}
-                    className="text-gray-400 hover:text-white transition-colors duration-300 font-light group flex items-center"
+                    className="text-gray-400 hover:text-white transition-colors duration-300 font-light group flex items-center tracking-wide"
                   >
                     <span className="w-1 h-1 bg-gray-400 rounded-full mr-3 group-hover:bg-white transition-colors duration-300"></span>
                     {link}
@@ -148,7 +148,7 @@ const Footer = () => {
             transition={{ duration: 0.2 }}
           >
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-gray-400 text-sm font-light">All systems operational</span>
+            <span className="text-gray-400 text-sm font-light tracking-wide">All systems operational</span>
           </motion.div>
         </motion.div>
       </div>

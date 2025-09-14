@@ -54,10 +54,10 @@ const HowItWorks = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 tracking-[0.1em]">
             How it works
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light tracking-[0.05em]">
             Simple setup. Powerful results.
           </p>
         </motion.div>
@@ -115,10 +115,10 @@ const HowItWorks = () => {
                     {step.number}
                   </motion.div>
                   
-                  <h3 className="text-2xl font-medium text-black mb-4 group-hover:text-gray-800 transition-colors">
+                  <h3 className="text-2xl font-light text-black mb-4 group-hover:text-gray-800 transition-colors tracking-wide">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors">
+                  <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors tracking-[0.02em]">
                     {step.description}
                   </p>
                 </div>

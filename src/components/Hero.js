@@ -88,76 +88,127 @@ const Hero = () => {
           transform: `translate(${mousePosition.x * 0.1}px, ${mousePosition.y * 0.1}px)`,
         }}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
-        >
-          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-black text-white mb-6 tracking-[0.15em] leading-none" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            rope.core
-          </h1>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-        >
-          <h2 className="text-lg md:text-xl lg:text-2xl font-light text-gray-300 mb-8 tracking-[0.2em] uppercase" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Digital Heart of Your Yacht
-          </h2>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          <p className="text-sm md:text-base text-gray-400 mb-12 max-w-2xl mx-auto font-light tracking-[0.05em]" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-            Monitoring, safety, and control in one app.
-          </p>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
-        >
-          <motion.button 
-            onClick={handleJoinPilotProgram}
-            className="relative bg-white text-black px-12 py-5 rounded-2xl font-semibold text-lg overflow-hidden group shadow-2xl cursor-pointer"
-            style={{ fontFamily: 'Space Grotesk, sans-serif' }}
-            whileHover={{ 
-              scale: 1.05, 
-              boxShadow: "0 20px 40px rgba(255, 255, 255, 0.3)",
-              y: -2
-            }}
-            whileTap={{ scale: 0.95 }}
+        {/* Poster-style content container */}
+        <div className="max-w-4xl mx-auto relative">
+          {/* Decorative lines */}
+          <motion.div
+            className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-b from-transparent via-white/30 to-transparent"
+            initial={{ height: 0 }}
+            animate={{ height: 64 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          />
+          <motion.div
+            className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-px h-16 bg-gradient-to-t from-transparent via-white/30 to-transparent"
+            initial={{ height: 0 }}
+            animate={{ height: 64 }}
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          
+          {/* Side decorative elements */}
+          <motion.div
+            className="absolute top-1/2 -left-8 transform -translate-y-1/2 w-12 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+            initial={{ width: 0 }}
+            animate={{ width: 48 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          />
+          <motion.div
+            className="absolute top-1/2 -right-8 transform -translate-y-1/2 w-12 h-px bg-gradient-to-l from-transparent via-white/20 to-transparent"
+            initial={{ width: 0 }}
+            animate={{ width: 48 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8"
+          >
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 tracking-[0.1em] leading-[0.9] relative" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              <motion.span
+                className="inline-block"
+                animate={{ 
+                  textShadow: [
+                    "0 0 20px rgba(255,255,255,0.3)",
+                    "0 0 40px rgba(255,255,255,0.6)",
+                    "0 0 20px rgba(255,255,255,0.3)"
+                  ]
+                }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                rope.core
+              </motion.span>
+            </h1>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mb-6"
+          >
+            <h2 className="text-sm md:text-base lg:text-lg font-light text-gray-300 tracking-[0.3em] uppercase relative" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              <span className="relative">
+                Digital Heart of Your Yacht
+                <motion.div
+                  className="absolute -bottom-1 left-0 h-px bg-gradient-to-r from-white/60 to-transparent"
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 1, delay: 0.8 }}
+                />
+              </span>
+            </h2>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mb-10"
+          >
+            <p className="text-xs md:text-sm text-gray-400 max-w-md mx-auto font-light tracking-[0.1em] leading-relaxed" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Monitoring, safety, and control in one app.
+            </p>
+          </motion.div>
+          
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <span className="relative z-10 tracking-wide">Join Pilot Program</span>
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100"
-              transition={{ duration: 0.3 }}
-            />
-            <motion.div
-              className="absolute inset-0 bg-white/20"
-              animate={{
-                boxShadow: [
-                  "0 0 0 0 rgba(255, 255, 255, 0.4)",
-                  "0 0 0 20px rgba(255, 255, 255, 0)",
-                ],
+            <motion.button 
+              onClick={handleJoinPilotProgram}
+              className="relative bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-full font-light text-sm overflow-hidden group border border-white/20 cursor-pointer"
+              style={{ fontFamily: 'Space Grotesk, sans-serif' }}
+              whileHover={{ 
+                scale: 1.05, 
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
+                borderColor: "rgba(255, 255, 255, 0.4)",
+                y: -2
               }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-            />
-          </motion.button>
-        </motion.div>
+              whileTap={{ scale: 0.95 }}
+            >
+              <span className="relative z-10 tracking-[0.2em] uppercase">Join Pilot Program</span>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100"
+                transition={{ duration: 0.3 }}
+              />
+              <motion.div
+                className="absolute inset-0 bg-white/10"
+                animate={{
+                  boxShadow: [
+                    "0 0 0 0 rgba(255, 255, 255, 0.2)",
+                    "0 0 0 10px rgba(255, 255, 255, 0)",
+                  ],
+                }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
+              />
+            </motion.button>
+          </motion.div>
+        </div>
       </motion.div>
       
       {/* Scroll indicator */}

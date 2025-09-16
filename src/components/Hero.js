@@ -6,7 +6,7 @@ const Hero = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 300], [0, -150]);
 
-  const handleJoinPilotProgram = () => {
+  const handleGetEarlyAccess = () => {
     // Scroll to CallToAction section
     const callToActionSection = document.querySelector('#call-to-action');
     if (callToActionSection) {
@@ -146,7 +146,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mb-6"
           >
-            <h2 className="text-sm md:text-base lg:text-lg font-light text-gray-300 tracking-[0.3em] uppercase relative" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+            <h2 className="text-lg md:text-xl lg:text-2xl font-light text-white tracking-[0.2em] uppercase relative" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
               <span className="relative">
                 Digital Heart of Your Yacht
                 <motion.div
@@ -165,8 +165,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="mb-10"
           >
-            <p className="text-xs md:text-sm text-gray-400 max-w-md mx-auto font-light tracking-[0.1em] leading-relaxed" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-              Monitoring, safety, and control in one app.
+            <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto font-light tracking-[0.1em] leading-relaxed" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+              Your AI Copilot for safe, predictive, and effortless sailing.
             </p>
           </motion.div>
           
@@ -176,28 +176,27 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <motion.button 
-              onClick={handleJoinPilotProgram}
-              className="relative bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-full font-light text-sm overflow-hidden group border border-white/20 cursor-pointer"
+              onClick={handleGetEarlyAccess}
+              className="relative bg-white text-black px-10 py-4 rounded-full font-semibold text-base overflow-hidden group border-2 border-white cursor-pointer"
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
               whileHover={{ 
                 scale: 1.05, 
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-                borderColor: "rgba(255, 255, 255, 0.4)",
+                backgroundColor: "rgba(255, 255, 255, 0.9)",
                 y: -2
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10 tracking-[0.2em] uppercase">Join Pilot Program</span>
+              <span className="relative z-10 tracking-[0.1em]">Get Early Access</span>
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100"
+                className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100"
                 transition={{ duration: 0.3 }}
               />
               <motion.div
-                className="absolute inset-0 bg-white/10"
+                className="absolute inset-0 bg-white/5"
                 animate={{
                   boxShadow: [
-                    "0 0 0 0 rgba(255, 255, 255, 0.2)",
-                    "0 0 0 10px rgba(255, 255, 255, 0)",
+                    "0 0 0 0 rgba(255, 255, 255, 0.3)",
+                    "0 0 0 15px rgba(255, 255, 255, 0)",
                   ],
                 }}
                 transition={{

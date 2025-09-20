@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HorizontalStory from './components/HorizontalStory/HorizontalStory';
+import SimpleHorizontalStory from './components/HorizontalStory/SimpleHorizontalStory';
 import Hero from './components/Hero';
 import CoreFeatures from './components/CoreFeatures';
 import PreDepartureChecklist from './components/PreDepartureChecklist';
@@ -7,10 +8,11 @@ import FleetScale from './components/FleetScale';
 import SecurityPeace from './components/SecurityPeace';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import './index.css';
 
 // Feature flags
-const HORIZONTAL_MODE = true;
-const ENABLE_3D_WATER = true;
+const HORIZONTAL_MODE = true; // Test simple version
+const ENABLE_3D_WATER = false;
 const REDUCED_MOTION_FORCE = false;
 
 function App() {
@@ -62,7 +64,7 @@ function App() {
   if (useHorizontalMode) {
     return (
       <div className="App">
-        <HorizontalStory enable3D={enable3D} />
+        <SimpleHorizontalStory />
       </div>
     );
   }

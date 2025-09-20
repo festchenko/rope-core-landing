@@ -9,7 +9,8 @@ const CausticsScene = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const mountElement = mountRef.current;
+    if (!mountElement) return;
 
     // Scene setup
     const scene = new THREE.Scene();
@@ -22,7 +23,7 @@ const CausticsScene = () => {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    mountRef.current.appendChild(renderer.domElement);
+    mountElement.appendChild(renderer.domElement);
 
     // Store references
     sceneRef.current = scene;
@@ -160,7 +161,6 @@ const CausticsScene = () => {
       window.removeEventListener('resize', handleResize);
       document.removeEventListener('visibilitychange', handleVisibilityChange);
       
-      const mountElement = mountRef.current;
       if (mountElement && renderer.domElement) {
         mountElement.removeChild(renderer.domElement);
       }
